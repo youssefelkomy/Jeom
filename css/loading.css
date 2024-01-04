@@ -1,0 +1,32 @@
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-circle {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: loading 1s linear infinite;
+  display: none;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.send-massage {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 55px;
+  text-align: center;
+}

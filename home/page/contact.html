@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تواصل معنا في مكتبة جيوم - حيث يلتقي الاهتمام بمختلف الآراء والاقتراحات">
+  <meta name="author" content="Youssef Elkomy">
+  <meta name="keywords" content="اتصال, مكتبة, تواصل, رسالة, استفسار">
+  <meta property="og:title" content="مكتبة جيوم - اتصل بنا">
+  <meta property="og:description" content="تواصل معنا في مكتبة جيوم - حيث يلتقي الاهتمام بمختلف الآراء والاقتراحات">
+  <meta property="og:image" content="https://jeom.netlify.app//Images/Icons/library-icon.png">
+  <meta property="og:url" content="https://jeom.netlify.app/home/page/contact.html">
+
+
+  <!-- Page Title -->
+  <title>مكتبة جيوم - اتصل بنا</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://jeom.netlify.app/Images/Icons/favicon.ico">
+
+  <!-- External Fonts -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../css/landing.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/about.css">
+  <link rel="stylesheet" href="../../css/contact.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-buttons" id="navButtons">
+      <div>
+        <ul>
+          <li><button onclick="window.location.href = '../../index.html'">الرئيسية</button></li>
+          <li><button onclick="window.location.href = 'library.html'">المكتبة</button></li>
+          <li><button onclick="window.location.href = 'services.html'">الخدمات</button></li>
+          <li><button onclick="window.location.href = 'about.html'">من نحن</button></li>
+          <li><button onclick="window.location.href = 'contact.html'" disabled class="disabled-butt">اتصل بنا</button>
+          </li>
+        </ul>
+      </div>
+      <ul>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <h2>مكتبة جيوم</h2>
+      <div class="contain" onclick="myFunction(this)" id="navBar">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="overlay" class="overlay"></div>
+      <div class="sidebar" id="sideBar">
+        <button class="close-i mob-buttons" id="closeI">
+          <span><i class="fa-solid fa-xmark"></i></span>
+        </button>
+        <ul>
+          <li>
+            <i class="fa-solid fa-house fa-lg"></i>
+            <button class="mob-buttons" onclick="window.location.href = '../../index.html'">الرئيسية</button>
+          </li>
+          <li>
+            <i class="fa-solid fa-book fa-lg"></i>
+            <button class="mob-buttons" onclick="window.location.href = 'library.html'">المكتبة</button>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-info fa-lg"></i>
+            <button class="mob-buttons" onclick="window.location.href = 'services.html';">الخدمات</button>
+          </li>
+          <li>
+            <i class="fa-solid fa-users fa-lg"></i>
+            <button class="mob-buttons" onclick="window.location.href = 'about.html';">من نحن</button>
+          </li>
+          <li class="active">
+            <i class="fa-solid fa-message fa-lg"></i>
+            <button class="mob-buttons">اتصل بنا</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  </header>
+  <div class="container">
+    <section class="team-section">
+      <div class="section-header">
+        <h1 class="section-title">إتصل بنا</h1>
+      </div>
+      <div class="section-content">
+        <a class="team-member" href="https://www.facebook.com/profile.php?id=100082957451630" target="_blank">
+          <h3>إتصل بنا عبر فيس بوك</h3>
+          <p><i class="fa-brands fa-facebook fa-xl"></i></p>
+          <i class="fa-solid fa-arrow-left fa-xl arrow-icon"></i>
+        </a>
+        <a class="team-member" href="https://wa.link/npt9gk" target="_blank">
+          <h3>إتصل بنا عبر واتس آب</h3>
+          <p><i class="fa-brands fa-whatsapp fa-xl" ></i></p>
+          <i class="fa-solid fa-arrow-left fa-xl arrow-icon"></i>
+        </a>
+        <a class="team-member" href="https://github.com/youssefelkomy" target="_blank">
+          <h3>إتصل بنا عبر Github</h3>
+          <p><i class="fa-brands fa-github fa-xl"></i></p>
+          <i class="fa-solid fa-arrow-left fa-xl arrow-icon"></i>
+        </a>
+      </div>
+    </section>
+
+  </div>
+  <footer>
+    <script src="https://kit.fontawesome.com/e2c8963695.js" crossorigin="anonymous"></script>
+    <script src="../../Scripts/Animations/landing-page.js"></script>
+    <script src="../../Scripts/Animations/sideBar.js"></script>
+  </footer>
+</body>
+
+</html>

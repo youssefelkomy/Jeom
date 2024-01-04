@@ -1,0 +1,370 @@
+ul {
+    list-style: none;
+}
+
+:root {
+    --background-hover-color: rgb(196, 196, 196);
+    --background-active-color: rgb(204, 204, 204);
+    --cancel-button-color: rgb(202, 78, 78);
+    --cancel-button-color-hover: rgb(212, 111, 111);
+    --save-button-color: rgb(75, 182, 75);
+    --save-button-color-hover: rgb(106, 197, 106);
+}
+
+.settings button::before {
+    transform: scaleX(1);
+    transform: scaleY(2);
+}
+
+.settings-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-left: 3rem;
+    background-color: rgb(221, 221, 221);
+    width: 25%;
+}
+
+.settings-sidebar h3 {
+    margin-bottom: 2rem;
+    font-size: 25px;
+    margin-top: 7rem;
+}
+
+.settings-sidebar li {
+    transition: 0.4s;
+}
+
+.settings-sidebar li:hover {
+    background-color: var(--background-hover-color);
+    cursor: pointer;
+}
+
+.settings-sidebar li button,
+h3 {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.settings-sidebar li button {
+    width: 23rem;
+    padding-top: 11px;
+    padding-bottom: 1px;
+    height: 100%;
+    font-size: 18px;
+}
+
+.settings-sidebar li button:hover::before {
+    transform-origin: center;
+    transform: scaleX(0);
+}
+
+.settings {
+    position: absolute;
+    top: 0;
+    right: 35%;
+    width: 50%;
+    height: 100%;
+}
+
+.settings .account {
+    display: none;
+    align-items: center;
+    height: 100%;
+}
+
+.settings h2 {
+    margin-top: 2rem;
+}
+
+.settings .change-email,
+.settings .change-name,
+.settings .change-password {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.settings .change-button {
+    color: black;
+    background-color: rgb(2, 163, 208);
+    padding: 8px 18px;
+    border: 1px solid black;
+    border-radius: 2px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+}
+
+.settings .account .change-button:hover,
+.settings .profile .change-button:hover {
+    background-color: rgb(3, 183, 232);
+}
+
+.active {
+    background-color: var(--background-active-color);
+}
+
+.settings-sidebar li.active button {
+    cursor: default;
+}
+
+.settings .choose-message {
+    font-size: 25px;
+    margin-top: 40%;
+}
+
+.settings .appearance .first {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.settings .appearance .choose-appearance {
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings .appearance select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.settings .appearance select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.settings .appearance select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.settings .appearance select:active::after,
+.settings .appearance select:focus::after {
+    transform: translateY(-50%) rotateX(180deg);
+}
+
+.settings .appearance button {
+    padding: 10px 20px;
+    background-color: #2d83bc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.settings .appearance button:hover {
+    background-color: #2980b9;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+.select-dropdown {
+    display: none;
+}
+
+.select-styled {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.select-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.select-options li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-options li:hover {
+    background-color: #f1f1f1;
+}
+
+.settings .save-settings {
+    align-self: flex-end;
+    background-color: var(--save-button-color);
+    margin-top: 40%;
+    color: white;
+    margin-left: 0.5rem;
+    padding: 10px 8px;
+    font-size: 18px;
+    transition: 0.3s
+}
+
+.settings .profile .save-settings:hover,
+.settings .account .save-settings:hover,
+.settings .appearance .save-settings:hover {
+    background-color: var(--save-button-color-hover);
+}
+
+.settings .cancel-settings {
+    background-color: rgb(202, 78, 78);
+    color: white;
+    padding: 10px 8px;
+    font-size: 18px;
+}
+
+.settings .profile .cancel-settings:hover,
+.settings .account .cancel-settings:hover,
+.settings .appearance .cancel-settings:hover {
+    background-color: var(--cancel-button-color-hover);
+}
+
+.changeNameForm {
+    flex-direction: column;
+}
+
+.cancel-change-name {
+    background-color: var(--cancel-button-color);
+    padding: 8px 18px;
+    border: 1px solid black;
+    border-radius: 2px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+}
+
+.cancel-change-name:hover {
+    background-color: var(--cancel-button-color-hover);
+    color: white;
+}
+
+.save-changes {
+    background-color: var(--save-button-color);
+    padding: 8px 18px;
+    border: 1px solid black;
+    border-radius: 2px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+}
+
+.save-changes:hover {
+    background-color: var(--save-button-color-hover);
+    color: white;
+}
+
+.alert1 {
+    position: absolute;
+    top: 0;
+    right: 20%;
+}
+
+.alert1 p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+/* Change Name Form Styles */
+
+#changeNameForm {
+    width: 80%;
+    position: relative;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 5rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: -34%;
+}
+
+#changeNameForm label {
+    font-size: 1.1rem;
+    color: #1E3A56;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+#changeNameForm input[type="text"] {
+    width: 80%;
+    padding: 12px 7px;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    border: 1px solid rgba(197, 168, 0, 0.179);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-family: 'Cairo';
+}
+
+#changeNameForm input[type="text"]:focus {
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(255, 172, 51, 0.5);
+}
+
+#changeNameForm button {
+    width: 30%;
+    justify-self: center;
+}
+
+/* Animations */
+.profile {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.5s, transform 0.6s;
+}
+
+.profile.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.account {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.5s, transform 0.6s;
+}
+
+.account.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.appearance {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.5s, transform 0.6s;
+}
+
+.appearance.show {
+    opacity: 1;
+    transform: translateY(0);
+}

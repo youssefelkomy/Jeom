@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&family=Changa:wght@200;300;400;500;600;700;800&family=Dosis:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 6px !important;
+    scroll-behavior: smooth !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: darkgrey !important;
+    border-radius: 10px !important;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(124, 124, 124);
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background-color: rgb(134, 133, 133);
+  }
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+#bookForm {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.9em;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #ecf0f1;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+}
+
+
+
+button{
+    /* Set the position of the parent */
+    transition: 0.3s;
+    border: 1px solid black;
+    padding: 10px 17px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.4s;
+    background-color: #0088ff;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Cairo';
+    cursor: pointer;
+    font-size: 16px;
+  }
+  button i {
+    margin-right: 5px;
+    transition: 0.5s;
+  }
+  button:hover{
+    background-color: #007dea;
+  }
+  
+input{
+    font-family: 'Cairo';
+}
+textarea{
+    font-family: 'Cairo';
+    height: 180px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    padding: 10px 20px;
+    background-color: #da2b04;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+a:hover{
+    background-color: #c02300;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+}

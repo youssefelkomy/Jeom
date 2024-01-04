@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content=".مرحبًا في مكتبة جيوم، حيث يتجسد العلم والخيال في صفحاتنا. ابحر في عالم مليء بالقصص الرائعة والأفكار الملهمة، حيث يتجاوز التعلم الحدود. اختر من بين تشكيلتنا المتنوعة من الكتب، انطلق في رحلة الاكتشاف الأدبي الذي يوسّع أفقك ويغني روحك. مكتبة جيوم، حيث يحلق العقل والروح في مغامرة لا تنسى. استمتع بتصفح تشكيلتنا المميزة التي تمتد عبر مختلف الأنواع والمواضيع، من الروايات المثيرة إلى الأدب الواقعي الملهم. اترك الكلمات تأخذك في رحلة لا مثيل لها، حيث يتجلى الفن والتفكير في صفحات مكتبتنا. اكتشف الجمال في التنوع وتنقل بين عوالم متعددة في هذا الملاذ الأدبي.">
+  <meta name="author" content="Youssef Elkomy">
+  <meta name="keywords" content="أدب, اكتشاف, روح, معرفة, قصص, عقل, خيال, تعلم, مكتبة, ثقافة">
+  <meta property="og:title" content="مكتبة جيوم - الصفحة الرئيسية">
+  <meta property="og:description"
+    content=".مرحبًا في مكتبة جيوم، حيث يتجسد العلم والخيال في صفحاتنا. ابحر في عالم مليء بالقصص الرائعة والأفكار الملهمة، حيث يتجاوز التعلم الحدود. اختر من بين تشكيلتنا المتنوعة من الكتب، انطلق في رحلة الاكتشاف الأدبي الذي يوسّع أفقك ويغني روحك. مكتبة جيوم، حيث يحلق العقل والروح في مغامرة لا تنسى">
+  <meta property="og:image" content="https://jeom.netlify.app//Images/Icons/library-icon.png">
+  <meta property="og:url" content="https://jeom.netlify.app/index.html">
+
+  <!-- Page Title -->
+  <title>مكتبة جيوم - الرئيسية</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://jeom.netlify.app/Images/Icons/favicon.ico">
+
+  <!-- External Fonts -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/up-button.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <!-- Navigation -->
+    <nav class="nav-buttons" id="navButtons">
+      <ul>
+        <li><button onclick="window.location.href = 'index.html'" disabled>الرئيسية</button></li>
+        <li><button onclick="window.location.href = 'home/page/library.html'">المكتبة</button></li>
+        <li><button onclick="window.location.href = 'home/page/services.html';">الخدمات</button></li>
+        <li><button onclick="window.location.href = 'home/page/about.html';">من نحن</button></li>
+        <li><button onclick="window.location.href = 'home/page/contact.html';">اتصل بنا</button></li>
+      </ul>
+    </nav>
+
+    <!-- Wrapper and Navigation Bar -->
+    <div class="wrapper" dir="rtl">
+      <h2>مكتبة جيوم</h2>
+      <div class="contain" onclick="myFunction(this)" id="navBar">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="overlay" class="overlay"></div>
+      <div class="sidebar" id="sideBar">
+        <button class="close-i" id="closeI">
+          <span><i class="fa-solid fa-xmark"></i></span>
+        </button>
+        <ul>
+          <li class="active">
+            <i class="fa-solid fa-house fa-lg"></i>
+            <button>الرئيسية</button>
+          </li>
+          <li>
+            <i class="fa-solid fa-book fa-lg"></i>
+            <button onclick="window.location.href = 'home/page/library.html';">المكتبة</button>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-info fa-lg"></i>
+            <button onclick="window.location.href = 'home/page/services.html';">الخدمات</button>
+          </li>
+          <li>
+            <i class="fa-solid fa-users fa-lg"></i>
+            <button onclick="window.location.href = 'home/page/about.html';">من نحن</button>
+          </li>
+          <li>
+            <i class="fa-solid fa-message fa-lg"></i>
+            <button onclick="window.location.href = 'home/page/contact.html';">اتصل بنا</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <button class="button-up"><span><i class="fa-solid fa-arrow-up fa-lg"></i></span></button>
+  <div class="container">
+    <main dir="rtl">
+      <h1 id="welcomeMessage" class="welcome-message">مرحبًا بك في مكتبة جيوم</h1>
+      <p id="libraryDescription" style="font-size: 18px;">استمتع بتصفح مجموعة كبيرة من الكتب المميزة في مختلف المجالات.
+      </p>
+      <section class="short-cut-buttons">
+        <p id="specialQue">إلى أين تريد أن تذهب ؟ </p>
+        <ul class="buttons">
+          <li><a class="featured-button" href="#featuredBooks" onclick="smoothScroll('featuredBooks')">كتب مميزة <i
+                class="fa-solid fa-book"></i></a></li>
+          <li><a class="favorite-button" href="#favorite" onclick="smoothScroll('favorite')">المفضلة <i
+                class="fa-solid fa-star"></i></a></li>
+          <li><a class="reading-button" href="#readingPlans" onclick="smoothScroll('readingPlans')">خطط القراءة <i
+                class="fa-solid fa-book-open"></i></a></li>
+          <li><a href="home/registration/register.html" id="registerButton">تسجيل المستخدم <i
+                class="fa-solid fa-user"></i></a></li>
+        </ul>
+      </section>
+      <!-- Featured Books Section -->
+      <section class="featured-books" id="featuredBooks">
+        <div class="section-header">
+          <h2 class="section-title">كتب مميزة</h2>
+        </div>
+        <div class="book-container">
+          <div class="book-buttons">
+            <button class="arrowRight"><span class="right"><i class="fa-solid fa-chevron-right"></i></span></button>
+            <button class="arrowLeft"><span class="leeft"><i class="fa-solid fa-chevron-left"></i></span></button>
+          </div>
+          <a class="book" href="home/book/رحلتي من الشك الى الإيمان.html">
+            <img src="Images/Book Covers/رحلتي من الشك إلى الإيمان.webp" alt="غلاف كتاب رحلتي من الشك إلى الإيمان">
+            <h3>رحلتي من الشك إلى الإيمان</h3>
+            <p href="home/Authors/مصطفى محمود.html">د. مصطفى محمود</p>
+          </a>
+          <a href="home/book/الهوية والحركية الإسلامية.html" class="book">
+            <img src="Images/Book Covers/الهوية والحركية الإسلامية.webp" alt="غلاف كتاب الهوية والحركية الإسلامية">
+            <h3>الهوية والحركية الإسلامية</h3>
+            <p href="home/Authors/عبد الوهاب المسيري.html">د. عبد الوهاب المسيري</p>
+          </a>
+            <a href="../book/السنوار - الشوك.html" class="book">
+              <img src="../../Images/Book Covers/السنوار - الشوك.webp" alt="غلاف الكتاب" class="book-img">
+              <h3>السنوار الشوك والقرنفل</h3>
+              <p href='../Authors/يحيى السنوار.html' class='author-link'>يحيى السنوار</p>
+            </a>
+          <a href="home/book/اينشتين والنسبية.html" class="book">
+            <img src="Images/Book Covers/اينشتين والنسبية.webp" alt="غلاف الكتاب" class="book-img">
+            <h3>اينشتين والنسبية</h3>
+            <p href="home/Authors/مصطفى محمود.html" class="author-link">د . مصطفي محمود</p>
+          </a>
+          <a href="home/book/العادات الذرية.html" class="book">
+            <img src="../../Images/Book Covers/العادات الذرية.webp" alt="غلاف الكتاب" class="book-img">
+            <h3>العادات الذرية</h3>
+            <p>جيمس كلير</p>
+          </a>
+          <a href="home/book/الطاعون القرمزي.html" class="book">
+            <img src="../../Images/Book Covers/الطاعون القرمزي.webp" alt="غلاف الكتاب" class="book-img">
+            <h3>الطاعون القرمزي</h3>
+            <p>جاك لندن</p>
+          </a>
+        </div>
+      </section>
+      <section class="favorite-section" id="favorite">
+        <div class="book-bar">
+          <div class="book-container-header">
+            <h3>
+              المفضلة
+              <i class="fa-solid fa-star favorite-icon"></i>
+              <span><i class="fa-solid fa-chevron-left left-icon"></i></span>
+            </h3>
+            <div class="book-container favorite-book-container" style="position: relative;">
+              <p style="text-align: center; margin: auto; font-size: 18px;" class="no-favorite">ليس لديك أي كتب في
+                المفضلة بعد ، يرجى إضافة كتب إلى المفضلة لتظهر هنا .</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reading-plans" id="readingPlans">
+        <div class="section-header">
+          <h2 class="section-title">خطط القراءة</h2>
+        </div>
+        <p class="section-description" style="font-size: 18px;">استكشف خطط القراءة المختلفة لتحقيق أهدافك الشخصية
+          والتنمية الشخصية.</p>
+        <div class="plans-container">
+          <!-- Plan 1 -->
+          <div class="reading-plan special">
+            <h3>تحدي القراءة الشهري</h3>
+            <p>قم بقراءة كتاب واحد على الأقل كل شهر وشارك تجربتك معنا.</p>
+          </div>
+          <!-- Plan 2 -->
+          <div class="reading-plan ">
+            <h3>استكشاف الأدب العالمي</h3>
+            <p>اختر كتابًا من كل قارة واكتشف ثقافات مختلفة.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="end-page-buttons">
+        <a href="home/page/library.html" class="button">تصفح المكتبة</a>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <script src="https://kit.fontawesome.com/e2c8963695.js" crossorigin="anonymous"></script>
+    <script src="Scripts/Animations/landing-page.js"></script>
+    <script src="Scripts/Animations/sideBar.js"></script>
+    <script src="Scripts/Home/index.js"></script>
+  </footer>
+</body>
+
+</html>

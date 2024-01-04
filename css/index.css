@@ -1,0 +1,514 @@
+/* Main Content Styles */
+/* Maximum width and margins for the main content area */
+main {
+  max-width: 1650px;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: right;
+}
+
+/* Heading Styles */
+/* Styling for main headings */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #1E3A56;
+}
+
+::-webkit-scrollbar {
+  height: 2px;
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+}
+
+.short-cut-buttons ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.short-cut-buttons ul li {
+  list-style: none;
+  transition: 0.3s ease-out;
+  position: static;
+}
+
+.short-cut-buttons p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.short-cut-buttons ul li a {
+  text-decoration: none;
+  color: #666;
+  margin: 0 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.263);
+  padding: 7px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.short-cut-buttons ul li a i {
+  justify-self: flex-end;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.short-cut-buttons ul li a:hover {
+  color: #333;
+  border-color: #888;
+  background-color: #f1f1f1;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.short-cut-buttons ul li a:active {
+  background-color: #e9e9e9;
+  outline: none;
+}
+
+.short-cut-buttons ul li:hover {
+  transform: translateY(-5px);
+  background-color: transparent;
+}
+
+.short-cut-buttons ul li a i {
+  margin-right: 5px;
+}
+
+/* Featured Books Section Styles */
+.featured-books {
+  background-color: #f9f9f9;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Section Header Styles */
+.section-header {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #1E3A56;
+}
+
+/* Books Container Styles */
+.book-container {
+  display: flex;
+  overflow-x: auto;
+  width: calc(100%);
+  gap: 20px;
+  position: relative;
+  border-bottom: 1px solid #56555569;
+  margin-bottom: 3rem;
+  padding-bottom: 4rem;
+  justify-content: flex-start;
+}
+
+.book-buttons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.book-buttons span {
+  font-size: 16px;
+  position: fixed;
+  background-color: #e3e3e3b9;
+  border-radius: 50px;
+  padding: 9px 16px 5px 16px;
+  z-index: +3;
+  color: #555;
+  transition: 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.090);
+}
+
+.book-buttons span i {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.book-buttons .leeft {
+  left: 2%;
+}
+
+.book-buttons .arrowLeft,
+.book-buttons2 .arrowLeft2 {
+  left: 0%;
+}
+
+.book-buttons span:hover,
+.book-buttons2 span:hover i {
+  transform: translateX(-5px);
+}
+
+.book-buttons .right {
+  right: 2%;
+}
+
+.book-buttons .right:hover {
+  transform: translateX(5px);
+}
+
+/*Book Styles*/
+.book {
+  padding: 1rem;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: initial;
+}
+
+.book:hover {
+  border: 1px solid rgba(0, 0, 0, 0.203);
+  transform: translateY(-3px);
+}
+
+.book img {
+  max-width: auto;
+  max-height: 330px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.book h3 {
+  font-size: 1rem;
+  color: #1E3A56;
+}
+
+.book p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+/* Button Styles */
+/* Styling for buttons */
+.nice-phrases {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.nice-phrase {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 1rem 0;
+}
+
+.end-page-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.163);
+  padding: 10px;
+  background-color: #FFAC33;
+  border-radius: 5px;
+  transition: 0.4s;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #feb952;
+  transform: translateY(-5px);
+}
+
+.book a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+.author-link {
+  display: block;
+}
+
+.book a:hover {
+  color: #FFAC33;
+}
+
+#book::before {
+  width: 0;
+}
+
+/* Reading Plans Button Styles */
+.reading-plans-button {
+  display: inline-block;
+  background-color: #1976D2;
+  /* Adjust the color as needed */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.reading-plans-button:hover {
+  background-color: #1565C0;
+  /* Adjust the color as needed */
+  transform: scale(1.05);
+}
+
+/* Add the fade-in animation */
+.fade-in {
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Reading Plans Section Styles */
+.reading-plans {
+  background-color: #f9f9f9;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.reading-plan {
+  flex-basis: calc(33.33% - 1rem);
+  padding: 1.5rem;
+  margin: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.352);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+  height: 10rem;
+}
+
+.reading-plan:hover {
+  transform: translateY(-5px);
+  background-color: #f3f3f3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.reading-plan h3 {
+  font-size: 1.3rem;
+  color: #1E3A56;
+  margin-bottom: 0.5rem;
+}
+
+.reading-plan p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.favorite-section {
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+
+.book-container-header h3 {
+  font-size: 25px;
+  color: #555;
+  text-align: right;
+  width: 25%;
+
+}
+
+.book-container-header .book h3 {
+  font-size: 1rem;
+  color: rgb(30, 58, 86);
+  margin-bottom: 0.5rem;
+}
+
+.book-container-header i {
+  font-size: 25px;
+  position: relative;
+  top: 2px;
+  cursor: text;
+  transition: 0.3s;
+  right: 5px;
+}
+
+.book-container-header .left-icon {
+  margin-right: 20px;
+}
+
+.book-container-header span {
+  cursor: unset;
+}
+
+.book-container-header h3:hover .left-icon {
+  rotate: -90deg;
+}
+
+.book-container p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+  .plans-container,
+  .events-container {
+    flex-direction: column;
+  }
+
+  .end-page-buttons {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reading-plan,
+  .event {
+    flex-basis: 100%;
+    margin: 1rem 0;
+  }
+
+  .reading-plan {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .reading-plan:nth-child(:first-child) {
+    margin-top: 1.5rem;
+  }
+
+  .short-cut-buttons ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .short-cut-buttons li {
+    width: 50%;
+    margin-bottom: 1.1rem;
+    margin-left: 4rem;
+  }
+
+  .short-cut-buttons li a {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-right: 45px;
+  }
+
+  .short-cut-buttons li a i {
+    position: relative;
+    top: 0;
+    left: 50%;
+  }
+
+  .reading-plans .special {
+    margin-top: 2rem;
+  }
+
+  .book-container-header h3 {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-buttons ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-buttons ul li {
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .book-container-header h3 {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .book h3 {
+    font-size: 14px;
+  }
+
+  .book p {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  .book img {
+    max-width: 290px;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .reading-plan {
+    width: 90%;
+  }
+
+  .book-buttons {
+    align-items: flex-end;
+  }
+
+  .book h3 {
+    font-size: 14px;
+  }
+
+  .book p {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  .book img {
+    max-width: 290px;
+    height: 260px;
+  }
+
+  .book-container-header .book h3 {
+    font-size: 14px;
+  }
+}

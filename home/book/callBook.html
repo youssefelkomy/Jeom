@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content=".مرحبًا في مكتبة جيوم، حيث يتجسد العلم والخيال في صفحاتنا. اغمر نفسك في عالم حيث تتشابك الكلمات لتخلق قصصًا، والأفكار تثير الإلهام، والتعلم لا يعرف حدودًا. استكشف العادات الذرية في كتابنا الجديد، حيث تتناول قصة فريدة تعزز التطور الشخصي وتلهم التغيير الإيجابي.">
+  <meta name="author" content="Youssef Elkomy">
+  <meta name="keywords" content="كتب, مكتبة, ثقافة, روايات, علوم, أدب, العادات الذرية">
+  <meta property="og:title" content="العادات الذرية في مكتبة جيوم">
+  <meta property="og:description"
+    content=".مرحبًا في مكتبة جيوم، حيث يتجسد العلم والخيال في صفحاتنا. استكشف العادات الذرية في كتابنا الجديد، حيث تتناول قصة فريدة تعزز التطور الشخصي وتلهم التغيير الإيجابي.">
+  <meta property="og:image" content="https://jeom.netlify.app/Images/Book%20Covers/العادات%20الذرية.webp">
+  <meta property="og:url" content="https://jeom.netlify.app/home/book/العادات%20الذرية.html/">
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://jeom.netlify.app/Images/Icons/favicon.ico">
+
+    <title>مكتبة جيوم - إستدعاء الكتاب</title>
+    <link rel="stylesheet" href="../../css/landing.css">
+    <link rel="stylesheet" href="../../css/submitBook.css">
+</head>
+<body>
+    <div class="container" style="display: flex; align-items: center; height: 100vh;@media screen and(max-width:767px){margin: 0 10px;}">
+    
+        <form id="bookForm" dir="rtl">
+          <h1>إستدعاء الكتاب إلى المكتبة</h1>
+
+            <input type="text" id="bookName" name="bookName" required placeholder="إسم الكتاب" style="margin-bottom: 10px;">
+            
+            <input type="text" id="authorName" name="authorName" required placeholder="إسم المؤلف">
+            <div class="button-container" style="margin-top: 2rem;">
+              <button type="button" onclick="generateBook()">إستدعاء الكتاب<i class="fa-solid fa-plus fa-lg"></i></button>
+              <a href="goto.html">عودة</a>  
+            </div>
+        </form>
+    </div>
+
+    <script src="../../Scripts/Home/addBookToLibrary.js"></script>
+    <script src="../../Scripts/Animations/landing-page.js"></script>
+    <script src="https://kit.fontawesome.com/e2c8963695.js" crossorigin="anonymous"></script>
+</body>
+</html>

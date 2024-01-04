@@ -1,0 +1,111 @@
+.main {
+  max-width: 1650px;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1E3A56;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+  color: #1E3A56;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(33.33% - 2rem);
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 2rem;
+  height: auto;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1E3A56;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: auto;
+}
+@media screen and (max-width: 768px) {
+  .nav-buttons ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-buttons ul li {
+    margin: 10px 0;
+  }
+
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .service {
+    flex-basis: calc(33.33% - 1rem);
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid rgba(0, 0, 0, 0.352);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+    height: 10rem;
+  }
+}

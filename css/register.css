@@ -1,0 +1,291 @@
+
+h1 {
+  margin-bottom: 10px;
+}
+
+form {
+  display: grid;
+  gap: 25px;
+}
+
+.registration-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+  margin: auto;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.4s ease 0.4s;
+  font-family: 'Cairo';
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007BFF;
+  top: -20px;
+  background-color: white;
+}
+
+.register {
+  background: #0056b3;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-family: "Cairo";
+  width: 40%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.register:hover {
+  background: #1d71cb;
+}
+.register:disabled:hover::before{
+  transform: scaleX(0);
+}
+.register:disabled {
+  transform: scale(1.00);
+  background: #82afe0;
+  cursor: not-allowed;
+  color: white;
+}
+.register:disabled:hover{
+  color: white;
+}
+
+.login-link {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #034a95;
+}
+
+.input-wrapper {
+  margin-top: 10px;
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.input-wrapper label {
+  position: absolute;
+  top: -10px;
+  right: 32%;
+  margin: 0;
+  text-align: center;
+  background-color: #fff;
+  padding: 0 5px;
+  transition: top 0.3s ease, background-color 0.3s ease, font-size 0.3s ease;
+  font-size: 13px;
+  color: #5b5a5a;
+  margin-bottom: 15px;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Cairo";
+  padding-right: 10px;
+}
+
+.input-wrapper input[type="text"],
+.input-wrapper input[type="email"],
+.input-wrapper input[type="password"] {
+  width: 40%;
+  padding: 12px;
+  outline: none;
+  transition: border-color 0.4s ease;
+  padding-top: 15px;
+}
+
+.input-wrapper input[type="text"]:focus+label,
+.input-wrapper input[type="email"]:focus+label,
+.input-wrapper input[type="password"]:focus+label {
+  top: -20px;
+  background-color: white;
+  font-size: 10px;
+}
+
+.ma {
+  margin-top: 20px;
+}
+
+.menu.active {
+  color: green;
+}
+
+.us {
+  position: absolute;
+  bottom: 420px;
+  left: 150px;
+}
+
+.em {
+  position: absolute;
+  left: 150px;
+  top: 220px;
+}
+
+.pass {
+  position: absolute;
+  left: 150px;
+  top: 330px;
+}
+
+.user {
+  position: relative;
+  text-align: right;
+  background-color: white;
+  z-index: +5;
+  margin-right: 10px;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-circle {
+  margin: auto;
+}
+
+.send-massage {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 55px;
+  text-align: center;
+}
+/* styles.css */
+
+/* Container for gender input */
+.gender-container {
+  direction: rtl; /* Right-to-left direction for Arabic text */
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 40%;
+  margin: auto;
+  direction: ltr;
+}
+
+/* Styling for gender labels and inputs */
+.gender-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gender-input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Custom radio button style */
+.gender-radio {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 2px solid #555;
+  border-radius: 50%;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+/* Style for checked state */
+.gender-input:checked + .gender-radio {
+  background-color: #555;
+}
+
+/* Hover effect for gender inputs */
+.gender-label:hover {
+  color: #0066cc;
+}
+
+/* Add a subtle box shadow to the input container */
+.input-wrapper.gender {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Center the radio button within its container */
+.gender-radio-container {
+  display: flex;
+  align-items: center;
+}
+.alert {
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 45%;
+  color: red;
+  font-size: 12px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.alert.active1 {
+  opacity: 1;
+  top: 115%;
+  background-color: transparent;
+}
+
+.alertpa {
+  text-align: justify;
+  padding-bottom: 10px;
+  opacity: 0.5;
+  color: rgb(122, 121, 121);
+}
+@media screen and (max-width: 778px){
+  .input-wrapper input[type="text"],
+.input-wrapper input[type="email"],
+.input-wrapper input[type="password"] {
+  width: 100%;
+}
+.register{
+  width: 50%;
+}
+.input-wrapper label {
+  right: 8%;
+}
+}

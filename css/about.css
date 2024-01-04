@@ -1,0 +1,204 @@
+  /* Main Content Styles */
+  .main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  /* Section Header Styles */
+  .section-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    color: #1E3A56;
+  }
+
+  /* Section Content Styles */
+  .section-description,
+  .team-member p,
+  .about-field p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  .section-description{
+    text-align: justify;
+    margin: 0;
+  }
+  ::-webkit-scrollbar {
+    height: 1px;
+  }
+
+  /* Team Member Styles */
+  .team-member {
+    display: inline-block;
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+    text-align: center;
+    text-decoration: none;
+    width: 40%;
+    margin-left: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.218);
+    background-color: #f9f9f9;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .team-member img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .team-member h3 {
+    font-size: 1.3rem;
+    color: #1E3A56;
+    margin-bottom: 0.5rem;
+  }
+
+  /* About Section Styles */
+  .about-section,
+  .team-section {
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: 0.5s;
+    padding: 1rem;
+  }
+
+  /* About Details Styles */
+  .about-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  .about-field {
+    flex-basis: calc(50% - 1rem);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+  }
+
+  .about-field h2 {
+    font-size: 1.5rem;
+    color: #1E3A56;
+  }
+
+  .about-field:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f1f1f1;
+  }
+
+  .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f1f1f1;
+  }
+
+  .arrow-icon {
+    margin-top: 1rem;
+    color: #333;
+    position: absolute;
+    left: 15%;
+    bottom: 50%;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  @keyframes arrowIcon {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(-40px);
+      opacity: 1;
+    }
+  }
+  @keyframes arrowIconBack {
+    0% {
+      transform: translateX(-40px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  }
+  .team-member:hover .arrow-icon {
+    animation-name: arrowIcon;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+  .team-member:not(:hover) .arrow-icon {
+    animation-name: arrowIconBack;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+  @media screen and (max-width: 768px) {
+    .nav-buttons ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-buttons ul li {
+      margin: 10px 0;
+    }
+
+    .team-member {
+      width: 100%;
+    }
+    .about-field{
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 415px) {
+    @keyframes arrowIcon {
+      0% {
+        transform: translateX(-10px);
+        opacity: 0;
+      }
+  
+      100% {
+        transform: translateX(-30px);
+        opacity: 1;
+      }
+    }
+    @keyframes arrowIconBack {
+      0% {
+        transform: translateX(-30px);
+        opacity: 1;
+      }
+  
+      100% {
+        transform: translateX(-10px);
+        opacity: 0;
+      }
+    }
+  }
