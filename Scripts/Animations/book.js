@@ -42,8 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (scrollPosition >= featuredBooksSection.offsetTop) {
       buttonUp.style.opacity = '1';
+      buttonUp.style.transform = 'translateY(0)';
     } else {
       buttonUp.style.opacity = '0';
+      buttonUp.style.transform = 'translateY(-5px)';
     }
   }
 
